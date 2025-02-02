@@ -1,0 +1,389 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background: #F5F7FA;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #7091E6;
+  width: 0%;
+  z-index: 1000;
+}
+
+/* Navigation Bar - Smaller Island Style */
+nav {
+  background: rgba(48, 82, 160, 0.9);
+  color: #fff;
+  padding: 0.5rem;
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 415px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.25rem; /* Reduced from 0.5rem */
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+nav .nav-links a:hover {
+  color: #7091E6;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  scroll-margin-top: 100px;
+}
+
+.hero-image {
+  background: url('assets/images/hero.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home span {
+  color: #3052A0;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Home Section Buttons */
+.button-group {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  flex-direction: row; /* Ensure buttons are in a row */
+}
+
+.btn {
+  background: linear-gradient(135deg, #3052A0, #7091E6);
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 110px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9999 !important; 
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Section */
+.skills {
+  background: transparent; /* Changed from #fff */
+  padding: 5rem 0;
+  scroll-margin-top: 100px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.skill-category {
+  background: #f5f7fa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1rem;
+}
+
+.skill-category h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #3052A0;
+  font-size: 1.25rem;
+}
+
+.skills-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.skill {
+  background: #3052A0;
+  color: #fff;
+  padding: 0.20rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(112, 145, 230, 0.3);
+}
+
+.skill i {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.skill span {
+  font-size: 0.9rem;
+}
+
+/* Experience Section */
+.experience {
+  padding: 5rem 0;
+  scroll-margin-top: 100px;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #3052A0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important; /* Override the left positioning */
+    padding: 10px 20px; /* Adjusted padding */
+  }
+
+  .timeline::before {
+    left: 20px; /* Move the timeline line to the left */
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0; /* Ensure even items are aligned to the left */
+  }
+}
+
+/* Projects Section */
+.projects {
+  padding: 5rem 0;
+  scroll-margin-top: 100px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ADB8DA;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Add this to make the button position relative to the project card */
+  min-height: 560px; /* Ensure all project cards have the same height */
+  display: flex;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(112, 145, 230, 0.3);
+}
+
+.project img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin: 1rem 0;
+}
+
+.project p {
+  flex-grow: 1; /* Allow the paragraph to take up remaining space */
+}
+
+.project .btn {
+  position: absolute; /* Position the button absolutely within the project card */
+  bottom: 1rem; /* Position at the bottom */
+  left: 1rem; /* Position at the left */
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+/* Contact Section */
+.contact {
+  background: #3052A0;
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s;
+  margin: 0 0.5rem; /* Added margin for better spacing */
+}
+
+.social-links a:hover {
+  color: #7091E6;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skill-category {
+    min-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
