@@ -9,6 +9,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.blue{
+  color: #3052A0; 
+  font-weight: 600;
+  font-weight: bold;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -16,6 +22,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 /* Scroll Progress Bar */
 .scroll-progress {
   position: fixed;
@@ -27,7 +34,7 @@ body {
   z-index: 1000;
 }
 
-/* Navigation Bar - Smaller Island Style */
+/* Navigation Bar Island Style */
 nav {
   background: rgba(48, 82, 160, 0.9);
   color: #fff;
@@ -114,8 +121,8 @@ nav .nav-links a:hover {
 /* Home Section Buttons */
 .button-group {
   display: flex;
-  gap: 1rem; /* Space between buttons */
-  flex-direction: row; /* Ensure buttons are in a row */
+  gap: 1rem; 
+  flex-direction: row; 
 }
 
 .btn {
@@ -142,7 +149,7 @@ nav .nav-links a:hover {
 
 /* Skills Section */
 .skills {
-  background: transparent; /* Changed from #fff */
+  background: transparent; 
   padding: 5rem 0;
   scroll-margin-top: 100px;
 }
@@ -262,16 +269,16 @@ nav .nav-links a:hover {
 @media (max-width: 768px) {
   .timeline-item {
     width: 100%;
-    left: 0 !important; /* Override the left positioning */
-    padding: 10px 20px; /* Adjusted padding */
+    left: 0 !important; 
+    padding: 10px 20px; 
   }
 
   .timeline::before {
-    left: 20px; /* Move the timeline line to the left */
+    left: 20px; 
   }
 
   .timeline-item:nth-child(even) {
-    left: 0; /* Ensure even items are aligned to the left */
+    left: 0; 
   }
 }
 
@@ -298,8 +305,8 @@ nav .nav-links a:hover {
   border: 1px solid #ADB8DA;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
-  position: relative; /* Add this to make the button position relative to the project card */
-  min-height: 560px; /* Ensure all project cards have the same height */
+  position: relative; 
+  min-height: 560px;
   display: flex;
   flex-direction: column;
 }
@@ -377,10 +384,6 @@ footer {
 
   .skill-category {
     min-width: 100%;
-  }
-
-  .button-group {
-    flex-direction: column; /* Stack buttons vertically on small screens */
   }
 }
 
