@@ -38,7 +38,7 @@ body {
 nav {
   background: rgba(48, 82, 160, 0.9);
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.6rem;
   position: sticky;
   top: 20px;
   z-index: 1000;
@@ -48,8 +48,8 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  width: 90%;
-  max-width: 415px;
+  width: 100%;
+  max-width: 390px;
   margin: 0 auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
@@ -58,7 +58,7 @@ nav {
 nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 0.25rem;
+  gap: 0.05rem;
   margin: 0;
   padding: 0;
   justify-content: center;
