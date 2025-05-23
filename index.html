@@ -41,11 +41,16 @@
   <div class="hero-image"></div>
   <div class="container">
     <div class="home-content" >
-      <h1>Hi, I'm <span>Nicholas</span></h1>
-      <p>A passionate Computer Science student specializing in <strong class="blue">Big Data Systems</strong> and <strong class="blue">UX/UI Design</strong>. I love solving complex problems and building innovative software solutions.</p>
-      <div class="button-group">
+      <h1 class="fade-up">Hi, I'm <span>Nicholas Cai</span></h1>
+      <div class="location-tag fade-up" data-delay="0.1s">
+        <i class="fas fa-map-marker-alt"></i>
+        Toronto, ON
+      </div>
+      <p class="fade-up" data-delay="0.2s">I'm a <strong class="blue">Full-stack Developer</strong> and <strong class="blue">DevOps Engineer</strong>. I'm currently studying Computer Science at Wilfrid Laurier University with a specialization in <strong class="blue">Big Data Systems</strong> and a minor in <strong class="blue">UX Design</strong>.</p>
+      <div class="button-group fade-up" data-delay="0.4s">
         <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="100">View My Work</a>
-        <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="200">Let's Connect</a>
+        <a href="https://github.com/cmuxiao" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicholascai/" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
@@ -143,7 +148,7 @@
           <ul>
             <li>Organized and executed high-traffic events for a club of over <strong>1000 members</strong>, enhancing their university experience.</li>
             <li>Led a team of <strong>9 students</strong> to plan and manage large-scale events, demonstrating strong leadership and organizational skills.</li>
-            <li>Contributed to the club’s growth and reputation as a vibrant and inclusive community.</li>
+            <li>Contributed to the club's growth and reputation as a vibrant and inclusive community.</li>
           </ul>
         </div>
       </div>
@@ -155,52 +160,105 @@
 <section id="projects" class="projects">
   <div class="container">
     <h2 data-aos="fade-up">Projects</h2>
+    <div class="project-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+    </div>
     <div class="projects-grid">
       <!-- Deepseek VSCode Extension -->
       <div class="project" data-aos="fade-up">
-        <img src="assets/images/deepseek.jpg" alt="Deepseek VSCode Extension" loading="lazy">
-        <h3>DeepSeek Extension</h3>
-        <p>Developed a <strong class="blue">VSCode</strong> extension to run DeepSeek locally. Built with <strong class="blue">TypeScript</strong>, this extension enhances the development workflow by integrating DeepSeek's capabilities directly into the editor.</p>
+        <img src="assets/images/deepseek.jpg" alt="VSCode Extension" loading="lazy">
+        <h3>VSCode Extension</h3>
+        <div class="project-tags">
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">VSCode</span>
+        </div>
+        <p>
+          <span class="project-description">Developed a <strong class="blue">VSCode</strong> extension to run DeepSeek locally. Built with <strong class="blue">TypeScript</strong>, this extension enhances the development workflow by integrating DeepSeek's capabilities directly into the editor.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://github.com/cmuxiao/deepseek-vscode-extension" target="_blank" class="btn">View Project</a>
       </div>
 
       <!-- Eye Circular Boundaries -->
       <div class="project" data-aos="fade-up" data-aos-delay="100">
         <img src="assets/images/eye.jpg" alt="Eye Circular Boundaries" loading="lazy">
-        <h3>Eye Detection</h3>
-        <p>An automated system to detect circular boundaries of the pupil, iris, and sclera in eye images. Implemented in <strong class="blue">Python</strong> within <strong class="blue">Jupyter Notebook</strong>, it uses edge detection and circular Hough transforms for precise boundary delineation.</p>
+        <h3>Eye Boundaries</h3>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">OpenCV</span>
+          <span class="project-tag">Jupyter</span>
+        </div>
+        <p>
+          <span class="project-description">An automated system to detect circular boundaries of the pupil, iris, and sclera in eye images. Implemented in <strong class="blue">Python</strong> within <strong class="blue">Jupyter Notebook</strong>, it uses edge detection and circular Hough transforms for precise boundary delineation.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://github.com/cmuxiao/eye-circular-boundaries" target="_blank" class="btn">View Project</a>
       </div>
 
       <!-- Faceswap -->
       <div class="project" data-aos="fade-up" data-aos-delay="200">
         <img src="assets/images/faceswap.jpg" alt="Faceswap" loading="lazy">
-        <h3>Facial Synthesis</h3>
-        <p>Developed a simplified face-swapping system using facial landmarks, leveraging <strong class="blue">Python</strong>, <strong class="blue">OpenCV</strong>, and <strong class="blue">Dlib</strong> for precise facial mapping and transformation. Based on advanced solutions developed at Newtouch.</p>        
+        <h3>Faceswap</h3>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">OpenCV</span>
+          <span class="project-tag">Dlib</span>
+        </div>
+        <p>
+          <span class="project-description">Developed a simplified face-swapping system using facial landmarks, leveraging <strong class="blue">Python</strong>, <strong class="blue">OpenCV</strong>, and <strong class="blue">Dlib</strong> for precise facial mapping and transformation. Based on advanced solutions developed at Newtouch.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://github.com/cmuxiao/faceswap" target="_blank" class="btn">View Project</a>
       </div>
 
-      <!-- Snake Game -->
+      <!-- Snake -->
       <div class="project" data-aos="fade-up">
-        <img src="assets/images/snake.jpg" alt="Snake Game" loading="lazy">
-        <h3>Snake Game</h3>
-        <p>Developed a classic Snake Game using <strong class="blue">JavaScript</strong> and <strong class="blue">HTML/CSS</strong>. Features include responsive gameplay, snake movement, food spawning, and collision detection. Integrated a scoring system to enhance engagement and replay value.</p>
+        <img src="assets/images/snake.jpg" alt="Snake" loading="lazy">
+        <h3>Snake</h3>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <p>
+          <span class="project-description">Developed a classic Snake Game using <strong class="blue">JavaScript</strong> and <strong class="blue">HTML/CSS</strong>. Features include responsive gameplay, snake movement, food spawning, and collision detection. Integrated a scoring system to enhance engagement and replay value.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://github.com/cmuxiao/snake-game" target="_blank" class="btn">View Project</a>
       </div>
 
       <!-- Profile Platform -->
       <div class="project" data-aos="fade-up" data-aos-delay="100">
         <img src="assets/images/projie.jpg" alt="Profile Platform" loading="lazy">
-        <h3>Projie Platform</h3>
-        <p>Built a dynamic web application using <strong class="blue">JavaScript</strong>, <strong class="blue">Node.js</strong>, and <strong class="blue">SQL</strong>. Combined project and job search functionalities with gamification elements to engage users. Utilized <strong class="blue">Figma</strong> for prototyping and testing.</p>
+        <h3>Projie</h3>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Figma</span>
+        </div>
+        <p>
+          <span class="project-description">Built a dynamic web application using <strong class="blue">JavaScript</strong>, <strong class="blue">Node.js</strong>, and <strong class="blue">SQL</strong>. Combined project and job search functionalities with gamification elements to engage users. Utilized <strong class="blue">Figma</strong> for prototyping and testing.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://www.figma.com/proto/uiqyVy3S2rYPmuDwWEFlqz/projie?node-id=0-1&t=mm80UGg2MTYlinlh-1" target="_blank" class="btn">View Project</a>
       </div>
 
-      <!-- Student Grade Tracker -->
+      <!-- Student Tracker -->
       <div class="project" data-aos="fade-up" data-aos-delay="200">
         <img src="assets/images/grade.jpg" alt="Student Grade Tracker" loading="lazy">
         <h3>Student Tracker</h3>
-        <p>Developed a comprehensive grade tracker using <strong class="blue">Excel</strong>, <strong class="blue">VBA</strong>, and <strong class="blue">SQL</strong>. Automated average grade calculations and generated insightful visualizations like histograms and detailed reports.</p>
+        <div class="project-tags">
+          <span class="project-tag">Excel</span>
+          <span class="project-tag">VBA</span>
+          <span class="project-tag">SQL</span>
+        </div>
+        <p>
+          <span class="project-description">Developed a comprehensive grade tracker using <strong class="blue">Excel</strong>, <strong class="blue">VBA</strong>, and <strong class="blue">SQL</strong>. Automated average grade calculations and generated insightful visualizations like histograms and detailed reports.</span>
+          <button class="show-more-btn">Show more</button>
+        </p>
         <a href="https://github.com/cmuxiao/grade-tracker" target="_blank" class="btn">View Project</a>
       </div>
     </div>
@@ -210,13 +268,13 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2 data-aos="fade-up">Contact Me</h2>
-      <p data-aos="fade-up">Feel free to reach out to me for collaborations or just a friendly hello!</p>
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me for collaborations or just a friendly hello!</p>
       <div class="social-links">
-        <a href="https://github.com/cmuxiao" target="_blank" data-aos="fade-up"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nicholascai/" target="_blank" data-aos="fade-up"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/ncai03/" target="_blank" data-aos="fade-up"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:nicholasmxcai@gmail.com" data-aos="fade-up"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/cmuxiao" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicholascai/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ncai03/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nicholasmxcai@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </section>
