@@ -582,11 +582,10 @@ html {
 }
 
 .home-headshot img {
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-  /* border-radius: 18px; */
-  /* box-shadow: 0 4px 24px rgba(48,82,160,0.10); */
+  max-width: 320px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
 }
 
 @media (max-width: 900px) {
