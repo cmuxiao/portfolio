@@ -582,7 +582,7 @@ html {
 }
 
 .home-headshot img {
-  max-width: 280px !important;
+  max-width: 320px !important;
   width: 100% !important;
   height: auto !important;
   display: block;
