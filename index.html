@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicholas Cai</title>
- <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta name="description" content="Nicholas Cai - Computer Science Student specializing in <b> Big Data Systems and UX/UI Design.">
+  <meta name="description" content="Nicholas Cai - Full-stack Developer and DevOps Engineer specializing in Big Data Systems and UX Design.">
   <meta property="og:title" content="Nicholas Cai - Portfolio">
   <meta property="og:description" content="Explore my projects and experience in software development and design.">
   <meta property="og:image" content="assets/images/profile.jpg">
@@ -39,19 +39,22 @@
 <!-- Home Section -->
 <section id="home" class="home" data-aos="fade-up">
   <div class="hero-image"></div>
-  <div class="container">
-    <div class="home-content" >
-      <h1 class="fade-up">Hi, I'm <span>Nicholas Cai</span></h1>
+  <div class="container home-flex">
+    <div class="home-content">
+      <h1 class="fade-up">Hi, I'm <span>Nicholas <span class="last-name">Cai</span></span></h1>
       <div class="location-tag fade-up" data-delay="0.1s">
         <i class="fas fa-map-marker-alt"></i>
         Toronto, ON
       </div>
       <p class="fade-up" data-delay="0.2s">I'm a <strong class="blue">Full-stack Developer</strong> and <strong class="blue">DevOps Engineer</strong>. I'm currently studying Computer Science at Wilfrid Laurier University with a specialization in <strong class="blue">Big Data Systems</strong> and a minor in <strong class="blue">UX Design</strong>.</p>
       <div class="button-group fade-up" data-delay="0.4s">
-        <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="100">View My Work</a>
-        <a href="https://github.com/cmuxiao" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nicholascai/" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="https://github.com/cmuxiao" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicholascai/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
       </div>
+    </div>
+    <div class="home-headshot">
+      <img src="assets/images/headshot.png" alt="Headshot" />
     </div>
   </div>
 </section>
@@ -119,6 +122,17 @@
   <div class="container">
     <h2 data-aos="fade-up">Experience</h2>
     <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>Full-stack Developer</h3>
+          <p><strong><a href="https://whizi.io/" target="_blank">Whizi</a></strong> | Waterloo, ON | January 2025 – Present</p>
+          <ul>
+            <li>Maintained over <strong>200 AI models</strong> across web and mobile platforms, ensuring continuous service for over <strong>300+ active users</strong> and supporting real-time inference workloads.</li>
+            <li>Engineered scalable backend systems using <strong class="blue">Node.js</strong> and <strong class="blue">PostgreSQL</strong>, handling more than <strong>10,000 user-generated messages</strong> monthly with high availability.</li>
+            <li>Collaborated with product and frontend teams to design and roll out new features, emphasizing performance optimization, data security, and system reliability in a fast-paced Agile environment.</li>
+          </ul>
+        </div>
+      </div>
       <div class="timeline-item" data-aos="fade-right">
         <div class="timeline-content">
           <h3>Software Engineer</h3>
@@ -273,7 +287,6 @@
       <div class="social-links">
         <a href="https://github.com/cmuxiao" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/nicholascai/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/ncai03/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="mailto:nicholasmxcai@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
