@@ -99,7 +99,15 @@ nav .nav-links a:hover {
   z-index: -1;
 }
 
+.home-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .home-content {
+  flex: 1 1 60%;
   max-width: 600px;
 }
 
@@ -564,4 +572,32 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+.home-headshot {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-headshot img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .home-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-headshot {
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .home-headshot img {
+    max-width: 220px;
+  }
 }
