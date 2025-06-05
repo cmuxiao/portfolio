@@ -354,44 +354,6 @@ nav .nav-links a:hover {
   margin-bottom: 2rem;
 }
 
-.project-filters {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  background: rgba(48, 82, 160, 0.9);
-  padding: 0.4rem;
-  border-radius: 25px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.filter-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-.filter-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
-  color: #fff;
-}
-
-.filter-btn.active {
-  background: rgba(255, 255, 255, 0.2);
-  font-weight: 600;
-  color: #fff;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
