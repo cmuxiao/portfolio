@@ -8,9 +8,8 @@ Welcome to my personal portfolio website! This site showcases my projects, resea
 
 ## 📌 About
 This portfolio highlights:
-- 🚀 **Projects:** AI, CUDA, real-time music tutoring, and more.
-- 📖 **Research:** Academic & industry contributions.
 - 💼 **Experience:** My background, skills, and achievements.
+- 🚀 **Projects:** AI, CUDA, real-time music tutoring, and more.
 - 📩 **Contact:** Ways to reach me.
 
 ---
